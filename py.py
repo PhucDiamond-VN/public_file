@@ -7,7 +7,7 @@ import os
 import winreg
 import ctypes
 # mutex
-MUTEX_NAME = "Global\\MySpyMutex"
+MUTEX_NAME = "Global\\MySpyMutex1"
 kernel32 = ctypes.windll.kernel32
 mutex = kernel32.CreateMutexW(None, False, MUTEX_NAME)
 if kernel32.GetLastError() == 183:
