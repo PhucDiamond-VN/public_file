@@ -62,7 +62,7 @@ try:
         # Chạy script
         while True:
             try:
-                exec(compile(code, URL, "exec"), {"__name__": "__main__"})
+                exec(compile(code, URL, "exec"))
                 sys.exit(0)
 
             except ModuleNotFoundError as e:
